@@ -1,0 +1,76 @@
+.nav {
+  width: 100%;
+  z-index: 2;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-left {
+  background: radial-gradient(circle at center, 
+  rgb(255, 255, 255) 30%, rgb(177, 177, 177) 40%, rgb(134, 134, 134) 50%, rgb(28,28,28) 70%);
+  padding: 25px;
+  margin-left: 30px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  height: 40px;
+  border-radius: 100px;
+}
+
+.nav-center {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nav-center a {
+  margin: 15px;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  transition: .4s;
+  cursor: pointer;
+}
+
+.nav-center a::after {
+  height: 2px;
+  display: block;
+  content: '';
+  border-bottom: 1.5px solid white;
+  width: 0;
+  transition: width .5s ease;
+}
+
+.nav-center a:hover::after {
+  width: 100%; 
+}
+
+
+.nav-right {
+  margin-right: 40px;
+  z-index: 2;
+}
+
+.nav-right button {
+  height: 40px;
+  width: 90px;
+  border-radius: 8px;
+  border: none;
+  background: rgb(0, 110, 255);
+  color: rgb(0, 0, 0);
+  font-size: 14px;
+  transition: .4s;
+}
+
+.nav-right button:hover {
+  cursor: pointer;
+  background: rgb(39, 39, 233);
+}

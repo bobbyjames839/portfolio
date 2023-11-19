@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap');
+
+* {
+  scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.App {
+  background: rgb(28, 28, 28);
+  min-height: 1000px;
+  color: white;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 0, 234);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
